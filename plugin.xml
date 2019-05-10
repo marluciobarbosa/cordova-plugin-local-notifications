@@ -68,24 +68,22 @@
 
         <framework src="UserNotifications.framework" />
         <framework src="CoreLocation.framework" />
-
+        
         <header-file src="src/ios/APPLocalNotification.h" />
         <source-file src="src/ios/APPLocalNotification.m" />
-
-        <header-file src="src/ios/APPNotificationCategory.h" />
-        <source-file src="src/ios/APPNotificationCategory.m" />
-
+        
         <header-file src="src/ios/APPNotificationContent.h" />
         <source-file src="src/ios/APPNotificationContent.m" />
-
+        
         <header-file src="src/ios/APPNotificationOptions.h" />
         <source-file src="src/ios/APPNotificationOptions.m" />
-
+        
         <header-file src="src/ios/UNUserNotificationCenter+APPLocalNotification.h" />
         <source-file src="src/ios/UNUserNotificationCenter+APPLocalNotification.m" />
-
+        
         <header-file src="src/ios/UNNotificationRequest+APPLocalNotification.h" />
         <source-file src="src/ios/UNNotificationRequest+APPLocalNotification.m" />
+
     </platform>
 
     <!-- android -->
