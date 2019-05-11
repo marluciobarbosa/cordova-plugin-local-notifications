@@ -19,14 +19,10 @@
  * limitations under the License.
  */
 
-#import "APPNotificationOptions.h"
-
 @import UserNotifications;
 
-@interface UNNotificationRequest (APPLocalNotification)
+@interface APPNotificationCategory : NSObject
 
-- (APPNotificationOptions*) options;
-- (BOOL) wasUpdated;
-- (NSString*) encodeToJSON;
++ (UNNotificationCategory*) parse:(NSArray*)list withId:(NSString*)groupId;
 
 @end

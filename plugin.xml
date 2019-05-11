@@ -3,7 +3,7 @@
 <!--
  * Apache 2.0 License
  *
- * Copyright (c) Sebastian Katzer 2017
+ * Copyright (c) Marlucio Barbosa 2019
  *
  * This file contains Original Code and/or Modifications of Original Code
  * as defined in and that are subject to the Apache License
@@ -24,19 +24,19 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
         id="cordova-plugin-local-notification"
-        version="0.9.2">
+        version="0.9.3-inovar">
 
     <name>LocalNotification</name>
 
     <description>Schedules and queries for local notifications</description>
 
-    <repo>https://github.com/Steffaan/cordova-plugin-local-notifications.git</repo>
+    <repo>https://github.com/marluciobarbosa/cordova-plugin-local-notifications.git</repo>
 
     <keywords>appplant, notification, local notification, user notification</keywords>
 
     <license>Apache 2.0</license>
 
-    <author>Sebastián Katzer</author>
+    <author>Marlucio Barbosa</author>
 
     <!-- cordova -->
     <engines>
@@ -65,12 +65,15 @@
                 <param name="onload" value="true" />
             </feature>
         </config-file>
-
+        
         <framework src="UserNotifications.framework" />
         <framework src="CoreLocation.framework" />
         
         <header-file src="src/ios/APPLocalNotification.h" />
         <source-file src="src/ios/APPLocalNotification.m" />
+        
+        <header-file src="src/ios/APPNotificationCategory.h" />
+        <source-file src="src/ios/APPNotificationCategory.m" />
         
         <header-file src="src/ios/APPNotificationContent.h" />
         <source-file src="src/ios/APPNotificationContent.m" />
@@ -83,7 +86,6 @@
         
         <header-file src="src/ios/UNNotificationRequest+APPLocalNotification.h" />
         <source-file src="src/ios/UNNotificationRequest+APPLocalNotification.m" />
-
     </platform>
 
     <!-- android -->

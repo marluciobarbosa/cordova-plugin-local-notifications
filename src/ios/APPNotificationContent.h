@@ -1,7 +1,7 @@
 /*
  * Apache 2.0 License
  *
- * Copyright (c) Sebastian Katzer 2017
+ * Copyright (c) Marlucio Barbosa 2019
  *
  * This file contains Original Code and/or Modifications of Original Code
  * as defined in and that are subject to the Apache License
@@ -28,6 +28,5 @@
 - (id) initWithOptions:(NSDictionary*)dict;
 - (APPNotificationOptions*) options;
 - (UNNotificationRequest*) request;
-- (UNNotificationCategory*) category;
 
 @end
